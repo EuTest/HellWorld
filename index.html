@@ -1,0 +1,58 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Какая-то лаба</title>
+	<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="/css/main.css"/>
+	<script type="text/javascript" src="/js/main.js"></script>
+</head>
+<body onload="init()">
+	<!-- <div id="namelessDiv">Непустой бессмысленный блок</div> -->
+	<table id="outerTable">
+		<tr>
+			<td>
+				<form onsubmit="pointBySubmittingForm(); return false;">
+					<p>Координата X:</p>
+					<label><input type="radio" name="x" value="4"> 4</label><br>
+					<label><input type="radio" name="x" value="3"> 3</label><br>
+					<label><input type="radio" name="x" value="2"> 2</label><br>
+					<label><input type="radio" name="x" value="1"> 1</label><br>
+					<label><input type="radio" ыв кпыврп ывапы вап ывапname="x" value="0"> 0</label><br>
+					<label><input type="radio" name="x" value="-1">-1</label><br>
+					<label><input type="radio" name="x" value="-2">-2</label><br>
+					<label><input type="radio" name="x" value="-3">-3</label><br>
+					<label><input type="radio" name="x" value="-4">-4</label><br>
+
+					
+					<p>Координата Y:</p>
+					<input type="text" id="y">
+
+					<p>Радиус R:</p>
+					<input type="button" value="1"   onclick="updateWithR(this.value)">
+					<input type="button" value="1.5" onclick="updateWithR(this.value)">
+					<input type="button" value="2"   onclick="updateWithR(this.value)">
+					<input type="button" value="2.5" onclick="updateWithR(this.value)">
+					<input type="button" value="3"   onclick="updateWithR(this.value)">
+
+
+					<p><input type="submit" value="Поставить точку"></p>
+				</form>
+			</td>
+			<td><canvas width="500" height="500" onclick="pointByClick(event)"></canvas></td>
+			<td>
+				<div id="wrapper">
+					<table id="resultTable">
+						<tr>
+							<td>Время</td>
+							<td>Координаты</td>
+							<td>R</td>
+							<td>Попадание</td>
+						</tr>
+					</table>
+				</div>
+			</td>
+		</tr>
+	</table>
+</body>
+</html>
