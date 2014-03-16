@@ -12,3 +12,8 @@ function toggle() {
 		alien[i].style.display = (alien[i].style.display == 'none') ? 'block' : 'none';
 	}
 }
+
+
+function KillAllHuman(){
+	KillAllHuman();
+}
