@@ -13,6 +13,10 @@ function toggle() {
 	}
 }
 
+
+// The New Function which prints lots of useful information
 function newFunction() {
 	console.log('New Functioin is working!');
 }
+
+
