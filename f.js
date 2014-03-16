@@ -12,3 +12,7 @@ function toggle() {
 		alien[i].style.display = (alien[i].style.display == 'none') ? 'block' : 'none';
 	}
 }
+
+function newFunction() {
+	console.log('New Functioin is working!');
+}
