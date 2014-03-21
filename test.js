@@ -2,5 +2,5 @@ console.log('hello, kitty');
 alert();
 
 function someNewFunction() {
-	return;
+	return rand();
 }
